@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'Aspergit';
+    src: local('AspergitLight'), url('aspergitlight.woff') format('woff');
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-shadow: 1px 1px 2px rgba(35, 32, 32, 0.5);
+}
+img {
+    border: none;
+}
+.ctr {
+    clear: both;
+}
+/*clearfix*/
+.karkas:before,
+.karkas:after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    clear: both;
+    zoom: 1
+}
+.karkas {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: url("fon-2.png");
+}
+.menu {
+    background-color: rgba(255, 255, 255, 0.2);
+    float: right;
+    margin: 20px 10px 0 800px;
+    padding: 0 10px 10px 0 ;
+    line-height: 1.3;
+    position: fixed;
+    z-index: 100;
+}
+.menu ul {
+    float: right;
+    list-style: none;
+
+}
+.menu li {
+    float: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 0 25px;
+}
+.menu li a{
+    text-decoration: none;
+    color: saddlebrown;
+}
+.menu li a:hover {
+    color: #00b3ff;
+}
+.menu li a.active {
+    color: yellow;
+}
+.home {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 0px 0;
+    background-image: ;
+}
+.logo {
+    margin: 10px 0 0 0;
+    float: left;
+    width: 20%;
+}
+.home span {
+    float: left;
+    font-size: 30px;
+    color: #00b3ff;
+    margin: 2px 1px 0 0;
+}
+.welcom {
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 1.3;
+    margin: 0 0 0 160px;
+    width: 600px;
+    padding: 10px 30px 30px 10px;
+
+}
+.welcom h1 {
+    font-size: 30px;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+.welcom p {
+    color: white;
+    font-size: 20px;
+    padding: 0 0 0 20px;
+    text-align: justify;
+}
+.network {
+    display: inline-block;
+    float: right;
+    padding: 0 10px 10px 25px;
+    margin: 100px 200px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100px;
+
+}
+.network h2 {
+    font-size: 20px;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    position: relative;
+    left: -25px;
+}
+.network p {
+    color: white;
+    font-size: 17px;
+    padding: 1px 0 1px 0;
+}
+.network p img {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    width: 50px;
+}
+.about-us {
+    background-color: rgba(255, 255, 255, 0.2);
+    float: right;
+    line-height: 1.3;
+    margin: 20px 200px 0 0px;
+    width: 600px;
+    padding: 10px 30px 30px 10px;
+}
+.about-us h1 {
+    font-size: 30px;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+.about-us p {
+    color: white;
+    font-size: 20px;
+    padding: 0 0 0 20px;
+    text-align: justify;
+}
+.tabs {
+    float: right;
+    list-style: none;
+    margin: 440px -600px 10px 0;
+
+}
+.tabs li {
+    float: left;
+    font-size: 12px;
+    margin-left: 30px;
+}
+.tabs li a {
+    color: white;
+    text-decoration: none;
+    padding: 1px 0 0 0;
+}
+.tabs li a:hover {
+    color: white;
+}
+.tabs li a:now {
+    color: yellow;
+    background-color: cyan;
+}
+#about-us_2 {
+    display: none;
+}
+#about-us_3 {
+    display: none;
+}
+#thumbs { padding-top: 10px; overflow: hidden; }
+#thumbs img, #largeImage {
+    border: 1px solid gray;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.portfolio {
+    margin: 420px 10px 10px 160px;
+    background-color: rgba(255, 255, 255, 0.2);
+    float: left;
+    width: 600px;
+    padding: 10px 20px 20px 10px;
+}
+.portfolio h1 {
+    font-size: 30px;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+#thumbs img {
+    float: left;
+    margin-right: 6px;
+}
+#thumbs img:hover {
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#thumbs img:active {
+    border: 1px solid yellow;
+}
+
+#description {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: grey;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    width: 525px;
+    margin: 5px;
+}
+#panel { position: relative; }
+
+.contact-main {
+    margin: 0 300px 300px 160px;
+    padding: 10px 100px 0 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    float: right;
+}
+.contact-main h1 {
+    font-size: 30px;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+.contact-form {
+    padding: 0 20px 30px 25px;
+}
+.input-main {
+    overflow: hidden;
+    margin: 0 0 5px 0;
+}
+.input-main div {
+    width: 274px;
+    height: 24px;
+    /*padding: 7px 0 0 10px;*/
+    float: left;
+}
+.input-main div input {
+    border: gray;
+    border-radius: 10px;
+    -background-color: gray;
+    font-size: 12px;
+    width: 263px;
+    color: gray;
+    text-shadow: 1px 1px 2px rgba(35, 32, 32, 0.5);
+}
+.input-main p {
+    color: white;
+    font-size: 15px;
+    float: left;
+    margin: 0 0 0 15px;
+    padding: 7px 10px;
+}
+.txtarea {
+    overflow: hidden;
+    position: relative;
+}
+.txtarea div {
+    float: left;
+    border-radius: 10px;
+    width: 263px;
+    height: 152px;
+}
+.txtarea div textarea {
+    width: 255px;
+    height: 142px;
+    border: gray;
+    resize: none;
+    color: gray;
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+.txtarea p {
+    color: white;
+    font-size: 15px;
+    float: left;
+    margin: 0 0 0 28px;
+}
+.txtarea input {
+    position: absolute;
+    bottom: 0;
+    right: 500px;
+    background-color: #00b3ff;
+    border-radius: 10px ;
+    width: 100px;
+    height: 50px;
+}
+.tel {
+    color: white;
+    font-size: 15px;
+    margin: -7px 0 20px 27px;
+}
+.tel span {
+    color: gold;
+    font-size: 17px;
+}
+.sticky {
+    position: fixed;
+    top: 15px;
+
+    animation:thedrop 1s 1;
+    -moz-animation:thedrop 1s 1;
+    -webkit-animation:thedrop 1s 1;
+}
+
+.sticky .nav-above {
+    position: absolute;
+    top:-15px;
+    left:1em;
+    right:1em;
+    height:15px;
+    background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+/*media queries*/
+
+/* #Tablet (Portrait) width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .karkas {
+        width: 700px;
+    }
+
+    .menu {
+        width: 728px;
+    }
+
+}
+
+/* #Mobile (Portrait) width of 320px */
+
+@media only screen and (max-width: 767px) {
+    .karkas {
+        width: 300px;
+    }
+
+    .welcom, .about-us, .portfolio, .contact-main {
+        float: none;
+        width: 100%;
+    }
+
+    .menu {
+        width: 328px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+
+}
+
+/* Mobile (Landscape) width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .karkas {
+        width: 400px;
+    }
+
+    .menu {
+        width: 428px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+
+}
+
